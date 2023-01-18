@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* padding: 0 10vw; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header > img {
+    width: 250px;
+    height: auto;
+    margin-bottom: -10px;
+}
+
+.header nav ul {
+    display: flex;
+    gap: 1.4rem;
+}
+
+.header,
+.hero {
+    background-color:  #FFECFC;
+}
+
+.header,
+.hero {
+    padding: 1vh 6vw;
+}
+
+.hero img {
+    align-self: flex-end;
+}
