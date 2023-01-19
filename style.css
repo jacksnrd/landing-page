@@ -1,10 +1,17 @@
+/* COLOR CODES
+Pink: #FFC7F4
+Light pink: #FF8AE8
+Gray: #80637A
+Purplish pink: #803D72
+Light gray: #CC9FC3
+*/
+
 * {
     margin: 0;
     box-sizing: border-box;
 }
 
 body {
-    /* padding: 0 10vw; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -17,16 +24,21 @@ a {
     color: black;
 }
 
+/* .top-section {
+    background-image: linear-gradient(180deg, rgba(255, 138, 232, 1), rgba(255, 138, 232, 0.25),rgba(255, 138, 232, 0.1), white);
+} */
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 16vw 6rem;
+    background-image: linear-gradient(180deg, rgba(255, 138, 232, .5), white);
 }
 
 .header > img {
     width: 250px;
     height: auto;
-    margin-bottom: -10px;
 }
 
 .header nav ul {
@@ -34,16 +46,82 @@ a {
     gap: 1.4rem;
 }
 
-.header,
 .hero {
-    background-color:  #FFECFC;
+    display: flex; 
+    flex-flow: column wrap;
+    padding: 0 16vw;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    gap: 1rem;
 }
 
-.header,
-.hero {
-    padding: 1vh 6vw;
+.hero h1 {
+    /* margin: 2rem 4rem; */
+}
+.hero p {
+    max-width: 1100px;
+}
+
+.hero button {
+    width: 15%;
+    padding: 1em .5em;
+    background-color: #FF75EA;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 2px #F8FCF6;
+    margin-bottom: 4rem;
+}
+
+.hero button:hover {
+    background-color: white;
+    color: #FF75EA;
+    border: 2px solid #FF75EA;    
 }
 
 .hero img {
-    align-self: flex-end;
+    width: 100%;
+    max-height: auto;
+}
+
+.section {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 6rem 16vw;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 12px;
+}
+
+.section h2 {
+    margin: 2rem;
+}
+
+.container img {
+    width: 200px;
+    height: auto;
+    border: 2px solid #FFECFC;
+    box-shadow: 4px 6px #F8FCF6;
+}
+
+.container p {
+    max-width: 250px;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background:#CC9FC3;
 }
