@@ -19,48 +19,60 @@ ul {
     list-style-type: none;
 }
 
-.header a {
+h1,
+h2,
+h3,
+h4 {
+    font-family: "freude", sans-serif;
+    letter-spacing: 1px;
+}
+
+header a {
     text-decoration: none;
     color:  #303030;
 }
 
-/* .top-section {
-    background-image: linear-gradient(180deg, rgba(255, 138, 232, 1), rgba(255, 138, 232, 0.25),rgba(255, 138, 232, 0.1), white);
-} */
-
-.header {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 16vw 6rem;
-    background-image: linear-gradient(180deg, rgba(255, 138, 232, .5), white);
+    background-image: linear-gradient(180deg, rgba(255, 138, 232, .3), white);
 }
 
-.header > img {
+header > img {
     width: 250px;
     height: auto;
 }
 
-.header nav ul {
+header nav ul {
     display: flex;
-    gap: 1.4rem;
+    gap: 1.5rem;
 } 
 
 .hero {
     display: flex; 
     flex-flow: column wrap;
-    padding: 0 16vw;
+    padding: 2rem 16vw 18rem;;
     align-items: center;
     align-content: center;
     text-align: center;
     gap: 1rem;
+    background-image: url(./assets/mushroom-graphic-line.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 900px;
 }
 
 .hero h1 {
     font-size: 36px;
     font-weight: 900;
-    /* margin: 2rem 4rem; */
 }
+
+.pink {
+    color:#FF7AE4;
+}
+
 .hero p {
     font-size: 18px;
     color: #303030;
@@ -84,10 +96,11 @@ ul {
     border: 2px solid #FF75EA;    
 }
 
-.hero img {
-    width: 100%;
-    max-height: auto;
-    margin-top: 4rem;
+.section.popular-spores {
+     background-image: repeating-conic-gradient(rgba(255, 138, 232, .08) 3%, rgba(255, 138, 232, 0) 6%);  
+     background-position: bottom, center;
+     background-repeat: no-repeat, repeat;
+     
 }
 
 .section {
@@ -95,11 +108,10 @@ ul {
     flex-flow: column nowrap;
     align-items: center;
     padding: 6rem 14vw;
-    /* gap: 1rem; */
 }
 
 .section h2 {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 800;
     margin-bottom: 4rem;
 }
@@ -109,24 +121,20 @@ ul {
     flex-wrap: wrap;
     text-align: center;
     justify-content: space-evenly;
-    gap: 2rem;
+    width: 100%;
 }
 
 .item {
     display: flex;
     flex-flow: column nowrap;
-    /* align-items: center; */
     gap: 1rem;
     margin-bottom: 1rem;
 }
 
 .container .item img {
-    /* margin: 0;
-    padding: 0; */
     width: 200px;
     height: auto;
     border: 2px solid #FF75EA;
-    box-shadow: 4px 6px 4px #F8FCF6;
     border-radius: 10%;
 }
 
@@ -147,13 +155,18 @@ ul {
 }
 
 .section.quote-block {
-    /* background-color: rgba(233, 112, 207, .25); */
-    background-image: linear-gradient(140deg, rgba(233, 112, 207, .25), rgba(233, 112, 207, 0));
+    background-color: white;
+    background-image: linear-gradient(to left,  rgba(255, 138, 232, .5), rgba(255, 255, 255, .95) 18%), url(./assets/forest.jpg);
     padding-left: 20vw;
     padding-right: 20vw;
 }
 
-.quote-block h4 {
+.capitalize-first-letter {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.quote-author {
     margin-left: auto;
 }
 
@@ -161,6 +174,7 @@ ul {
     flex-direction: row;
     justify-content: center;
 }
+
 .cta-block {
     background: #FF75EA;
     color: white;
@@ -172,16 +186,12 @@ ul {
     border-radius: 10px;
 }
 
-.column {
-    display: flex;
-    flex-flow: column wrap;
-}
-
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    background:rgba(30, 23, 28, 0.3);
+    background:#303030;
     color: white;
+    position: bottom;
 }
