@@ -120,8 +120,9 @@ header nav ul {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
+    gap: 32px;
     justify-content: space-evenly;
-    width: 100%;
+    width: 100%; 
 }
 
 .item {
@@ -129,6 +130,16 @@ header nav ul {
     flex-flow: column nowrap;
     gap: 1rem;
     margin-bottom: 1rem;
+}
+
+.item:hover{
+    transform:scale(1.05);
+    transition: ease .3s;
+}
+
+.item:hover strong {
+    color: #FF7AE4;
+    transition: ease .5s;
 }
 
 .container .item img {
